@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>AlphaGo vs. Humanity</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+        <style>
+        .horitem {
+          display: inline-block;
+          height: 100%;
+          margin: 5px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+        }
+        .horitem * {
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+        }
+        </style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h2>Ve Bilgisayar İnsanı Yine Yendi!</h2>
+					<h3>Bilgisayar ve Bilişim Topluluğu</h3>
+					<p>
+						<small>Yrd.Doç.Dr. İzzet PEMBECİ - 08.04.2016</small>
+					</p>
+                    <img src="img/go_poster_footer.png" />
+				</section>
+
+				<section>
+					<h3>Konuşma Planı</h3>
+                    <ul>
+                       <li><b>Neden buradayız?</b></li>
+                       <li>Nereden geldik? (Go, YZ Tarihçesi, Oyunlar ve YZ)</li>
+                       <li>Ne oldu şimdi? (AlphaGo, Deep Learning)</li>
+                       <li>Nereye gidiyoruz? (SKYNET!!!!)</li>                       
+                    </ul>
+				</section>
+
+				<section>
+                  <section>
+					<h3>Neden buradayız?</h3>
+                    <div class="stretch">
+                     <div class="horitem fragment" style="width:45%">
+                      <a href="http://bilmuh.mu.edu.tr/tr/etkinlik/bilgisayarlar-neden-go-oynayamayi-beceremezler-21-mart-cuma-3616"><div class="fragment" style="height:55%; background-image: url(img/seminer1.png);"></div></a>
+                      <div class="fragment" style="height: 45%; background-image: url(img/Fan-Hui-vs-AlphaGo.jpg);"></div>
+                     </div>  
+                     <div class="horitem fragment"  style="width:45%">
+                      <div class="fragment" style="height: 55%; background-image: url(img/nature-cover.jpg);"></div>
+                      <div class="fragment" style="height: 45%; background-image: url(img/sedol_match.jpg);"></div>
+                     </div>  
+                    </div> 
+                   </section> 
+                   <section>
+                    <div class="stretch">
+                      <div class="horitem" style="height: 100%; width:100%; background-image: url(img/betting.jpg);"></div>                        
+                    </div></section>                      
+                   <section>                     
+                       <script height="370px" width="658px" src="http://player.ooyala.com/iframe.js#ec=o1a2hzMDE6Fo5WSJ6vgihvknOJf9gZSm&pbid=dcc84e41db014454b08662a766057e2b"></script>
+                   </section>
+                   <section  data-background="img/korea1.jpg"></section>
+                   <section  data-background="img/korea2.jpg"></section>
+                   <section  data-background="img/watching1.jpg"></section>
+                   <section  data-background="img/watching2.jpg"></section>
+                   <section  data-background="img/watching3.jpg"></section>
+                   <section>
+                     <iframe width="560" height="315" src="https://www.youtube.com/embed/C2txn4igy-M?start=0&end=65" frameborder="0" allowfullscreen></iframe>
+                   </section>
+                   <section>
+                    <h4>DeepMind -- 2010 Kuruluş, 2014 Google ($500-$650 Milyon)</h4> 
+                    <div class="stretch">
+                      <div class="horitem fragment" style="height: 100%; width:100%; background-image: url(img/koray.jpg);"></div>  
+                    </div>  
+                   </section>
+                   <section>
+                    <h4>DeepMind -- 2010 Kuruluş, 2014 Google ($500 Milyon)</h4> 
+                    <div class="stretch">                     
+                     <div class="horitem fragment" style="height: 66%; width:32%;  background-position: 50% 100%; background-image: url(img/founder1.jpg)">
+                       <div style="text-align:center;"><small>Demis Hassabis<br>Kıbrıs Rum & Singapur</small></div>
+                     </div>
+                     <div class="horitem fragment" style="height: 66%; width:32%;  background-position: 50% 100%; background-image: url(img/founder2.png)">
+                       <div style="text-align:center;"><small>Shane Legg<br>Yeni Zellanda</small></div>
+                     </div>
+                     <div class="horitem fragment" style="height: 66%; width:32%;  background-position: 50% 100%; background-image: url(img/founder3.jpg)">
+                       <div style="text-align:center;"><small><a href="https://en.wikipedia.org/wiki/Mustafa_Suleyman">Mustafa Suleyman</a><br>???</small></div>
+                     </div>
+                    </div> 
+                   </section>    
+                   <section  data-background="#666" style="background-image:url(img/alphago_logo_small.png);">
+                    <div class="stretch">
+                      <div class="horitem" style="height: 100%; width:100%; background-image: url(img/headline1.jpg);"></div>                        
+                    </div></section>                      
+                   <section  data-background="#666" style="background-image:url(img/alphago_logo_small.png);">
+                    <div class="stretch">
+                      <div class="horitem" style="height: 100%; width:100%; background-image: url(img/headline2.jpg);"></div>                        
+                    </div></section>                      
+                   <section  data-background="#666" style="background-image:url(img/alphago_logo_small.png);">
+                    <div class="stretch">
+                      <div class="horitem" style="height: 100%; width:100%; background-image: url(img/headline3.jpg);"></div>                        
+                    </div></section>                      
+                   <section  data-background="#666" style="background-image:url(img/alphago_logo_small.png);">
+                    <div class="stretch">
+                      <div class="horitem" style="height: 100%; width:100%; background-image: url(img/headline4.jpg);"></div>                        
+                    </div></section>                      
+                   <section  data-background="#666" style="background-image:url(img/alphago_logo_small.png);">
+                    <div class="stretch">
+                      <div class="horitem" style="height: 100%; width:100%; background-image: url(img/headline5.jpg);"></div>                        
+                    </div></section>                      
+                   </section>
+				</section>
+				<section>
+					<h3>Konuşma Planı</h3>
+                    <ul>
+                       <li>Neden buradayız?</li>
+                       <li>Nereden geldik? (<b>Go</b>, YZ Tarihçesi, Oyunlar ve YZ)</li>
+                       <li>Ne oldu şimdi? (AlphaGo, Deep Learning)</li>
+                       <li>Nereye gidiyoruz? (SKYNET!!!!)</li>                       
+                    </ul>
+				</section>
+				<section>
+                    <h3><img src="img/playing1.png"  height=180/><span style="padding: 0px 16px">Go Oyunu</span>
+                           <img height=180 src="img/playing2.png" /></h3>
+                    <!-- <img style="position:absolute; top:-100px; left:-230px;" src="img/playing1.png" />
+                    <img style="position:absolute; top:-100px; right:-230px;" src="img/playing2.png" /> -->
+                    <ul>
+                      <li class="fragment">Çin (MÖ 4.yy, savaş, sanat), Kore (5-7. yy), Japonya (7. yy, <a href="http://en.wikipedia.org/wiki/Four_go_houses">okullar</a>), Batı (1900'ler)</li>
+                      <li class="fragment">Türkiye (90'lar, <a href="http://www.go.metu.edu.tr/alparkilinc.html">Alpar Kılınç</a>, <a href="https://eksisozluk.com/sibumi--153274">Şibumi</a>/<a href="https://eksisozluk.com/trevanian--33822">Trevanian</a>, <a href="http://www.tgod.org.tr/gohane">Türkiye Go Oyuncuları Derneği</a>)</li>
+                      <li class="fragment">Felsefi Boyutları</li>
+                      <li class="fragment">Basit Kurallar</li>
+                      <li class="fragment">Farklı güçte oyuncular (30k &rarr; 1k &rarr; 1d &rarr; 8d &rarr; 1p &rarr; 8p)</li>
+                      <li class="fragment">Nasıl öğrenirim: <a href="http://senseis.xmp.net/">Web</a>, <a href="http://www.goproblems.com/">Problemler</a>, Kitaplar, <a href="http://en.wikipedia.org/wiki/Internet_Go_server">Go Sunucuları</a> (IGS, KGS, <a href="http://en.wikipedia.org/wiki/Go_software#User_Interfaces">Clients</a>)</li>
+                    </ul>
+				</section>
+                 <section>
+                    <h3>Go Temel Kurallar</h3>
+                    <div  style="float: left; width:45%;"><img src="img/Go-board-animated.gif"/></div>
+                     <ul   style="width:45%; font-size:80%;">
+                       <li>Satrançvari mekanik: İki kişi, siyah beyaz <em>eşdeğer</em> taşlar, <em>noktalara</em> hamle</li>
+                       <li>Kural1 (liberty): Her taş (taş grubu) komşu boş noktalardan nefes almalı, nefes alamayanlar ölür.</li>
+                       <li>Kural2 (ko): Oyun (tahta) daha önceki bir konuma dönemez.</li>
+                       <li>Diğer kavramlar bunlardan türüyor</li>
+                       <li>Puanlama: Çevrilen alan + hapsedilen taşlar</li>
+                     </ul>                                        
+                </section>
+                <section>
+                    <h3>Go Bilgeliği - Strateji</h3>
+                        <div class="fragment zoom-in">
+                            <div>U.S. Army’s Strategic Studies Institute -  <a href="http://www.worldcat.org/title/learning-from-the-stones-a-go-approach-to-mastering-chinas-strategic-concept-shi/oclc/55599909">Learning from the Stones: A Go Approach to Mastering China’s Strategic Concept of Shi</a>:
+                              <blockquote>In this monograph, the author uses the ancient game of Go as a metaphor for the Chinese approach to strategy. He shows that this is very different than the linear method that underlies American strategy. By better understanding Go, he argues, American strategies could better understand Chinese strategy. </blockquote>
+                            </div>
+                       </div>
+                </section>
+                <section>
+                    <h3>Go Bilgeliği - <a href="#">Özdeyişler</a></h3>
+                    <ul  style="font-size:90%;">
+                      <li class="fragment">Give your opponent what he wants.</li>
+                      <li class="fragment">He who rides on a tiger can never get off.</li>
+                      <li class="fragment">A rich man should not pick quarrels.</li>
+                      <li class="fragment">Greed for the win takes the win away.</li>
+                      <li class="fragment">Don't try to win. Try not to lose.</li>
+                      <li class="fragment">You can play Go but don't let Go play you.</li>
+                      <li class="fragment">Never wrestle with a pig.</li>
+                      <li class="fragment">Make a fist before striking.</li>
+                      <li class="fragment">Play urgent moves before big moves.</li>
+                      <li class="fragment">Make a feint to the East while attacking in the West.</li>
+                      <li class="fragment">Play fast, die fast. Play slow, die slow.</li>
+                    </ul>                                        
+				</section>
+                
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+                viewDistance: 3,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
